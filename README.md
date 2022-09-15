@@ -1,4 +1,8 @@
-[![Special MedTechDIY redesigned version 0.1](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/MedTech_versions_BioAmp-EXG_3dvis.jpg)
+![Special MedTechDIY redesigned version 0.1](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/MedTech_versions_BioAmp-EXG_3dvis.jpg)
+
+To be used in the future of our project week at HSLU: https://www.hackteria.org/wiki/Medizintechnik_DIY
+
+Thanks a lot to the team at UpsideDown Labs!!!
 
 [![Down Labs BioAmp EXG Pill Crowd Supply banner](graphics/gifs//Crowd-Supply-Banner.gif)](https://www.crowdsupply.com/upside-down-labs/bioamp-exg-pill)
 
