@@ -1231,7 +1231,7 @@ Band Pass Filter Configuration (BPFC)
 Text Notes 8530 7330 0    118  ~ 0
 contact@upsidedownlabs.tech
 $Comp
-L udlabs:LOGO_UDLABS U2
+L BioAmp-EXG-Pill-rescue:LOGO_UDLABS-udlabs U2
 U 1 1 612DF07B
 P 6950 940
 F 0 "U2" H 6975 1285 50  0000 C CNN

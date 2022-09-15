@@ -1,0 +1,4 @@
+
+(fp_lib_table
+  (lib (name "Wawies_PCB_ready")(type KiCad)(uri "$(KIPRJMOD)/Wawies_PCB_ready.pretty")(options "")(descr ""))
+)
