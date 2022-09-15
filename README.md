@@ -1,3 +1,5 @@
+[![Special MedTechDIY redesigned version 0.1](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/MedTech_versions_BioAmp-EXG_3dvis.jpg)
+
 [![Down Labs BioAmp EXG Pill Crowd Supply banner](graphics/gifs//Crowd-Supply-Banner.gif)](https://www.crowdsupply.com/upside-down-labs/bioamp-exg-pill)
 
 
