@@ -1,10 +1,12 @@
 Thanks a lot to the team at UpsideDown Labs!!!
 
+## V1.0f - FeatherWing version, complete redesign for SMD 1206 parts
+
 ![Total redesign for use with UM Feather S3](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/screenshots/Feather-EXG-Pill_Ray_front.jpg)
 
-
-
 See more about the UM ESP-S3 board here: https://esp32s3.com/feathers3.html
+
+## V1.0b - forked and ordered, in process of manufacturing
 
 ![Special MedTechDIY redesigned version 0.1](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/screenshots/MedTech_versions_BioAmp-EXG_3dvis.jpg)
 
@@ -13,6 +15,8 @@ To be used in the future of our project week at HSLU: https://www.hackteria.org/
 Will be manufactured in GaudiLabs, still waiting for the parts... 0603 soooo small!!
 
 Thanks a lot to the team at UpsideDown Labs!!!
+
+# V1.0b - Original from Upside Down Labs
 
 [![Down Labs BioAmp EXG Pill Crowd Supply banner](graphics/gifs//Crowd-Supply-Banner.gif)](https://www.crowdsupply.com/upside-down-labs/bioamp-exg-pill)
 
