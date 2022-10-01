@@ -1,6 +1,22 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# LOGOS
+#
+DEF LOGOS J 0 40 Y Y 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "LOGOS" 0 0 50 H V C CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+ALIAS Jack-DC
+$FPLIST
+ BarrelJack*
+$ENDFPLIST
+DRAW
+S -200 150 200 -150 0 1 10 f
+ENDDRAW
+ENDDEF
+#
 # LOGO_UDLABS-udlabs
 #
 DEF LOGO_UDLABS-udlabs U 0 40 Y Y 1 F N

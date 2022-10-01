@@ -4,91 +4,91 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "BioAmp EXG Pill"
-Date "2021-08-06"
-Rev "1.0b"
-Comp "Upside Down Labs"
+Title "BioAmp EXG FeatherWing"
+Date "2022-10-01"
+Rev "1.0f"
+Comp "Upside Down Labs / dusjagr"
 Comment1 "Records EMG, ECG, EOG, and EEG"
 Comment2 "5v compatible EXG hardware"
-Comment3 "Signle chip biopotential amplifier"
+Comment3 "Single chip biopotential amplifier"
 Comment4 "TL074H based BioAmp"
 $EndDescr
 $Comp
 L Amplifier_Operational:TL074 U1
 U 2 1 601003D3
-P 3450 1970
-F 0 "U1" H 3530 2130 50  0000 C CNN
-F 1 "TL074" H 3400 1980 50  0000 C CNN
-F 2 "1Channel_PiezoAmp:SO-14_5.3x10.2mm_P1.27mm" H 3400 2070 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 2170 50  0001 C CNN
-	2    3450 1970
+P 2700 2170
+F 0 "U1" H 2780 2330 50  0000 C CNN
+F 1 "TL074" H 2650 2180 50  0000 C CNN
+F 2 "BioAmp:SO-14_5.3x10.2mm_P1.27mm" H 2650 2270 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2750 2370 50  0001 C CNN
+	2    2700 2170
 	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
 U 5 1 60103199
-P 8690 3960
-F 0 "U1" H 8255 3895 50  0000 L CNN
-F 1 "TL074" H 8245 3975 50  0000 L CNN
-F 2 "1Channel_PiezoAmp:SO-14_5.3x10.2mm_P1.27mm" H 8640 4060 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8740 4160 50  0001 C CNN
-	5    8690 3960
+P 6840 3810
+F 0 "U1" H 6405 3745 50  0000 L CNN
+F 1 "TL074" H 6395 3825 50  0000 L CNN
+F 2 "BioAmp:SO-14_5.3x10.2mm_P1.27mm" H 6790 3910 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6890 4010 50  0001 C CNN
+	5    6840 3810
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 60117BDC
-P 3000 1870
-F 0 "R9" V 2920 1870 50  0000 C CNN
-F 1 "1K" V 3000 1880 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 2930 1870 50  0001 C CNN
-F 3 "~" H 3000 1870 50  0001 C CNN
-	1    3000 1870
+P 2250 2070
+F 0 "R9" V 2170 2070 50  0000 C CNN
+F 1 "1K" V 2250 2080 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 2180 2070 50  0001 C CNN
+F 3 "~" H 2250 2070 50  0001 C CNN
+	1    2250 2070
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 6012231E
-P 2600 1520
-F 0 "R4" V 2520 1520 50  0000 C CNN
-F 1 "1K" V 2600 1520 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 2530 1520 50  0001 C CNN
-F 3 "~" H 2600 1520 50  0001 C CNN
-	1    2600 1520
+P 1850 1720
+F 0 "R4" V 1770 1720 50  0000 C CNN
+F 1 "1K" V 1850 1720 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 1780 1720 50  0001 C CNN
+F 3 "~" H 1850 1720 50  0001 C CNN
+	1    1850 1720
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 60122971
-P 3450 1620
-F 0 "R5" V 3370 1620 50  0000 C CNN
-F 1 "10K" V 3450 1620 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 3380 1620 50  0001 C CNN
-F 3 "~" H 3450 1620 50  0001 C CNN
-	1    3450 1620
+P 2700 1820
+F 0 "R5" V 2620 1820 50  0000 C CNN
+F 1 "10K" V 2700 1820 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 2630 1820 50  0001 C CNN
+F 3 "~" H 2700 1820 50  0001 C CNN
+	1    2700 1820
 	0    1    1    0   
 $EndComp
-Text GLabel 3830 1970 2    50   Input ~ 0
+Text GLabel 3080 2170 2    50   Input ~ 0
 inaOUT
-Text GLabel 2230 1970 0    50   Input ~ 0
+Text GLabel 1480 2170 0    50   Input ~ 0
 IN-
-Text GLabel 3130 2070 0    50   Input ~ 0
+Text GLabel 2380 2270 0    50   Input ~ 0
 IN+
 Wire Wire Line
-	2750 1520 2850 1520
+	2000 1720 2100 1720
 Wire Wire Line
-	2850 1520 2850 1870
+	2100 1720 2100 2070
 Wire Wire Line
-	2450 1520 2250 1520
+	1700 1720 1500 1720
 Wire Wire Line
-	3600 1620 3750 1620
+	2850 1820 3000 1820
 Wire Wire Line
-	3750 1620 3750 1970
+	3000 1820 3000 2170
 Wire Wire Line
-	3300 1620 3150 1620
+	2550 1820 2400 1820
 Wire Wire Line
-	3150 1620 3150 1870
-Connection ~ 3150 1870
+	2400 1820 2400 2070
+Connection ~ 2400 2070
 $Comp
 L power:VCC #PWR07
 U 1 1 60378EF6
@@ -100,13 +100,13 @@ F 3 "" H 3210 6150 50  0001 C CNN
 	1    3210 6150
 	1    0    0    -1  
 $EndComp
-Text Notes 2650 2750 0    118  ~ 24
+Text Notes 1040 2695 0    118  ~ 24
 Instrumentation Amp (INA)
-Text Notes 2800 5170 0    118  ~ 24
+Text Notes 1200 5155 0    118  ~ 24
 1000x Gain (Bandpass)
-Text Notes 2060 7730 0    118  ~ 24
+Text Notes 2110 7630 0    118  ~ 24
 Amp Ref + Driven Right Leg (DRL) 
-Text Notes 8130 5180 0    118  ~ 24
+Text Notes 6390 5150 0    118  ~ 24
 Power supply filtering
 $Comp
 L Amplifier_Operational:TL074 U1
@@ -114,7 +114,7 @@ U 4 1 60101E5C
 P 3760 6380
 F 0 "U1" H 3865 6255 50  0000 C CNN
 F 1 "TL074" H 3715 6385 50  0000 C CNN
-F 2 "1Channel_PiezoAmp:SO-14_5.3x10.2mm_P1.27mm" H 3710 6480 50  0001 C CNN
+F 2 "BioAmp:SO-14_5.3x10.2mm_P1.27mm" H 3710 6480 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3810 6580 50  0001 C CNN
 	4    3760 6380
 	1    0    0    1   
@@ -135,16 +135,16 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
 U 1 1 600FF580
-P 2550 1870
-F 0 "U1" H 2590 2050 50  0000 C CNN
-F 1 "TL074" H 2495 1875 50  0000 C CNN
-F 2 "1Channel_PiezoAmp:SO-14_5.3x10.2mm_P1.27mm" H 2500 1970 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2600 2070 50  0001 C CNN
-	1    2550 1870
+P 1800 2070
+F 0 "U1" H 1840 2250 50  0000 C CNN
+F 1 "TL074" H 1745 2075 50  0000 C CNN
+F 2 "BioAmp:SO-14_5.3x10.2mm_P1.27mm" H 1750 2170 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1850 2270 50  0001 C CNN
+	1    1800 2070
 	1    0    0    1   
 $EndComp
-Connection ~ 2850 1870
-Connection ~ 2250 1770
+Connection ~ 2100 2070
+Connection ~ 1500 1970
 Wire Wire Line
 	4060 6380 4060 6090
 Wire Wire Line
@@ -162,9 +162,9 @@ Wire Wire Line
 	4170 6090 4060 6090
 Connection ~ 4060 6090
 Wire Wire Line
-	3750 1970 3830 1970
-Connection ~ 3750 1970
-Text GLabel 1950 1770 0    50   Input ~ 0
+	3000 2170 3080 2170
+Connection ~ 3000 2170
+Text GLabel 1200 1970 0    50   Input ~ 0
 ampRef
 $Bitmap
 Pos 9870 6830
@@ -764,138 +764,128 @@ A1 4F 69 60 85 18 42 ED 4F A1 50 A0 C0 13 E9 64 BE 82 A6 6D 59 36 36 5E 63 CC 2E
 EndData
 $EndBitmap
 Wire Wire Line
-	2940 1070 3300 1070
+	2190 1270 2550 1270
 Wire Wire Line
-	3300 1070 3300 1620
-Connection ~ 3300 1620
+	2550 1270 2550 1820
+Connection ~ 2550 1820
 Wire Wire Line
-	2640 1070 2250 1070
+	1890 1270 1500 1270
+Connection ~ 1500 1720
 Wire Wire Line
-	2250 1070 2250 1520
-Connection ~ 2250 1520
-Wire Wire Line
-	2250 1520 2250 1770
-Wire Notes Line
-	2130 840  2130 1310
-Wire Notes Line
-	2130 1310 3480 1310
-Wire Notes Line
-	3480 1310 3480 840 
-Wire Notes Line
-	3480 840  2130 840 
-Text Notes 2370 810  0    39   ~ 0
+	1500 1720 1500 1970
+Text Notes 1620 660  0    39   ~ 0
 INA gain config (only increase)
 $Comp
 L Device:R R8
 U 1 1 60119AAA
-P 2100 1770
-F 0 "R8" V 2020 1770 50  0000 C CNN
-F 1 "10K" V 2100 1770 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 2030 1770 50  0001 C CNN
-F 3 "~" H 2100 1770 50  0001 C CNN
-	1    2100 1770
+P 1350 1970
+F 0 "R8" V 1270 1970 50  0000 C CNN
+F 1 "10K" V 1350 1970 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 1280 1970 50  0001 C CNN
+F 3 "~" H 1350 1970 50  0001 C CNN
+	1    1350 1970
 	0    1    1    0   
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
 U 3 1 60100F1E
-P 2510 4480
-F 0 "U1" H 2535 4660 50  0000 C CNN
-F 1 "TL074" H 2470 4485 50  0000 C CNN
-F 2 "1Channel_PiezoAmp:SO-14_5.3x10.2mm_P1.27mm" H 2460 4580 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2560 4680 50  0001 C CNN
-	3    2510 4480
+P 2110 4480
+F 0 "U1" H 2135 4660 50  0000 C CNN
+F 1 "TL074" H 2070 4485 50  0000 C CNN
+F 2 "BioAmp:SO-14_5.3x10.2mm_P1.27mm" H 2060 4580 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2160 4680 50  0001 C CNN
+	3    2110 4480
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R11
 U 1 1 6017635B
-P 2480 4160
-F 0 "R11" V 2580 4170 50  0000 C CNN
-F 1 "1M" V 2480 4170 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 2410 4160 50  0001 C CNN
-F 3 "~" H 2480 4160 50  0001 C CNN
-	1    2480 4160
+P 2080 4160
+F 0 "R11" V 2180 4170 50  0000 C CNN
+F 1 "1M" V 2080 4170 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 2010 4160 50  0001 C CNN
+F 3 "~" H 2080 4160 50  0001 C CNN
+	1    2080 4160
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R12
 U 1 1 6017BB52
-P 1650 4380
-F 0 "R12" V 1560 4380 50  0000 C CNN
-F 1 "1K" V 1650 4380 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 1580 4380 50  0001 C CNN
-F 3 "~" H 1650 4380 50  0001 C CNN
-	1    1650 4380
+P 1250 4380
+F 0 "R12" V 1160 4380 50  0000 C CNN
+F 1 "1K" V 1250 4380 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 1180 4380 50  0001 C CNN
+F 3 "~" H 1250 4380 50  0001 C CNN
+	1    1250 4380
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 6017C191
-P 1950 4380
-F 0 "C6" V 1698 4380 50  0000 C CNN
-F 1 "47uF" V 1789 4380 50  0000 C CNN
-F 2 "BioAmp:C_1210_dusjagr" H 1988 4230 50  0001 C CNN
-F 3 "~" H 1950 4380 50  0001 C CNN
-	1    1950 4380
+P 1550 4380
+F 0 "C6" V 1298 4380 50  0000 C CNN
+F 1 "47uF" V 1389 4380 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 1588 4230 50  0001 C CNN
+F 3 "~" H 1550 4380 50  0001 C CNN
+	1    1550 4380
 	0    1    1    0   
 $EndComp
-Text GLabel 2940 4480 2    50   Input ~ 0
+Text GLabel 2540 4480 2    50   Input ~ 0
 OUT
-Text GLabel 1500 4380 0    50   Input ~ 0
+Text GLabel 1100 4380 0    50   Input ~ 0
 inaOUT
-Text GLabel 2190 4580 0    50   Input ~ 0
+Text GLabel 1790 4580 0    50   Input ~ 0
 ampRef
 Wire Wire Line
-	2100 4380 2150 4380
+	1700 4380 1750 4380
 Wire Wire Line
-	2330 4160 2150 4160
+	1930 4160 1750 4160
 Wire Wire Line
-	2150 4160 2150 4380
-Connection ~ 2150 4380
+	1750 4160 1750 4380
+Connection ~ 1750 4380
 Wire Wire Line
-	2150 4380 2210 4380
+	1750 4380 1810 4380
 $Comp
 L Device:C C2
 U 1 1 60BAF6C7
-P 2500 3550
-F 0 "C2" V 2540 3460 50  0000 C CNN
-F 1 "47nF" V 2640 3550 50  0000 C CNN
-F 2 "BioAmp:C_1206_dusjagr" H 2538 3400 50  0001 C CNN
-F 3 "~" H 2500 3550 50  0001 C CNN
-	1    2500 3550
+P 2100 3550
+F 0 "C2" V 2140 3460 50  0000 C CNN
+F 1 "47nF" V 2240 3550 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 2138 3400 50  0001 C CNN
+F 3 "~" H 2100 3550 50  0001 C CNN
+	1    2100 3550
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	2350 3910 2150 3910
+	1950 3910 1750 3910
 Wire Wire Line
-	2150 3910 2150 4160
-Connection ~ 2150 4160
+	1750 3910 1750 4160
+Connection ~ 1750 4160
 Wire Wire Line
-	2350 3550 2150 3550
+	1950 3550 1750 3550
 Wire Wire Line
-	2150 3550 2150 3910
-Connection ~ 2150 3910
+	1750 3550 1750 3910
+Connection ~ 1750 3910
 $Comp
 L Device:C C5
 U 1 1 601A5E02
-P 9860 3990
-F 0 "C5" H 9650 4070 50  0000 C CNN
-F 1 "4.7uF" H 9630 3990 50  0000 C CNN
-F 2 "BioAmp:C_1206_dusjagr" H 9898 3840 50  0001 C CNN
-F 3 "~" H 9860 3990 50  0001 C CNN
-	1    9860 3990
+P 8010 3840
+F 0 "C5" H 7800 3920 50  0000 C CNN
+F 1 "4.7uF" H 7780 3840 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 8048 3690 50  0001 C CNN
+F 3 "~" H 8010 3840 50  0001 C CNN
+	1    8010 3840
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 60179051
-P 9490 3990
-F 0 "C4" H 9740 4080 50  0000 C CNN
-F 1 "100nF" H 9730 4000 50  0000 C CNN
-F 2 "BioAmp:C_1206_dusjagr" H 9528 3840 50  0001 C CNN
-F 3 "~" H 9490 3990 50  0001 C CNN
-	1    9490 3990
+P 7640 3840
+F 0 "C4" H 7890 3930 50  0000 C CNN
+F 1 "100nF" H 7880 3850 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 7678 3690 50  0001 C CNN
+F 3 "~" H 7640 3840 50  0001 C CNN
+	1    7640 3840
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -923,23 +913,23 @@ $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 60C16182
-P 8590 4260
-F 0 "#PWR04" H 8590 4010 50  0001 C CNN
-F 1 "GND" H 8595 4087 50  0000 C CNN
-F 2 "" H 8590 4260 50  0001 C CNN
-F 3 "" H 8590 4260 50  0001 C CNN
-	1    8590 4260
+P 6740 4110
+F 0 "#PWR04" H 6740 3860 50  0001 C CNN
+F 1 "GND" H 6745 3937 50  0000 C CNN
+F 2 "" H 6740 4110 50  0001 C CNN
+F 3 "" H 6740 4110 50  0001 C CNN
+	1    6740 4110
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR01
 U 1 1 60C1709B
-P 8590 3660
-F 0 "#PWR01" H 8590 3510 50  0001 C CNN
-F 1 "VCC" H 8605 3833 50  0000 C CNN
-F 2 "" H 8590 3660 50  0001 C CNN
-F 3 "" H 8590 3660 50  0001 C CNN
-	1    8590 3660
+P 6740 3510
+F 0 "#PWR01" H 6740 3360 50  0001 C CNN
+F 1 "VCC" H 6755 3683 50  0000 C CNN
+F 2 "" H 6740 3510 50  0001 C CNN
+F 3 "" H 6740 3510 50  0001 C CNN
+	1    6740 3510
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -977,401 +967,944 @@ Connection ~ 3210 6780
 Wire Wire Line
 	3210 6180 3210 6150
 Wire Wire Line
-	2210 4580 2190 4580
+	1810 4580 1790 4580
 Wire Wire Line
-	2230 1970 2250 1970
+	1480 2170 1500 2170
 Wire Wire Line
-	3150 2070 3130 2070
-$Comp
-L Device:R R1
-U 1 1 60B3C4E8
-P 2790 1070
-F 0 "R1" V 2700 1070 50  0000 C CNN
-F 1 "RG" V 2790 1070 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 2720 1070 50  0001 C CNN
-F 3 "~" H 2790 1070 50  0001 C CNN
-	1    2790 1070
-	0    1    1    0   
-$EndComp
+	2400 2270 2380 2270
 Wire Notes Line
 	470  2810 11220 2810
 Wire Notes Line
 	470  5250 11220 5250
-Text Notes 8280 2770 0    118  ~ 24
+Text Notes 9050 5150 0    118  ~ 24
 Electrode reference
 $Comp
 L power:GND #PWR03
 U 1 1 60365567
-P 9670 4140
-F 0 "#PWR03" H 9670 3890 50  0001 C CNN
-F 1 "GND" H 9675 3967 50  0000 C CNN
-F 2 "" H 9670 4140 50  0001 C CNN
-F 3 "" H 9670 4140 50  0001 C CNN
-	1    9670 4140
+P 7820 3990
+F 0 "#PWR03" H 7820 3740 50  0001 C CNN
+F 1 "GND" H 7825 3817 50  0000 C CNN
+F 2 "" H 7820 3990 50  0001 C CNN
+F 3 "" H 7820 3990 50  0001 C CNN
+	1    7820 3990
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR02
 U 1 1 60361848
-P 9670 3840
-F 0 "#PWR02" H 9670 3690 50  0001 C CNN
-F 1 "VCC" H 9685 4013 50  0000 C CNN
-F 2 "" H 9670 3840 50  0001 C CNN
-F 3 "" H 9670 3840 50  0001 C CNN
-	1    9670 3840
+P 7820 3690
+F 0 "#PWR02" H 7820 3540 50  0001 C CNN
+F 1 "VCC" H 7835 3863 50  0000 C CNN
+F 2 "" H 7820 3690 50  0001 C CNN
+F 3 "" H 7820 3690 50  0001 C CNN
+	1    7820 3690
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9860 3840 9670 3840
-Connection ~ 9670 3840
+	8010 3690 7820 3690
+Connection ~ 7820 3690
 Wire Wire Line
-	9670 3840 9490 3840
+	7820 3690 7640 3690
 Wire Wire Line
-	9490 4140 9670 4140
-Connection ~ 9670 4140
+	7640 3990 7820 3990
+Connection ~ 7820 3990
 Wire Wire Line
-	9670 4140 9860 4140
+	7820 3990 8010 3990
 $Comp
 L Device:C C1
 U 1 1 60E20DCF
-P 5380 1620
-F 0 "C1" V 5210 1620 50  0000 C CNN
-F 1 "2.2nF" V 5520 1620 50  0000 C CNN
-F 2 "BioAmp:C_1206_dusjagr" H 5418 1470 50  0001 C CNN
-F 3 "~" H 5380 1620 50  0001 C CNN
-	1    5380 1620
+P 3910 1075
+F 0 "C1" V 3740 1075 50  0000 C CNN
+F 1 "2.2nF" V 4050 1075 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 3948 925 50  0001 C CNN
+F 3 "~" H 3910 1075 50  0001 C CNN
+	1    3910 1075
 	0    1    -1   0   
 $EndComp
-Text GLabel 5530 1620 2    50   Input ~ 0
+Text GLabel 4060 1075 2    50   Input ~ 0
 IN+
-Text GLabel 5230 1620 0    50   Input ~ 0
+Text GLabel 3760 1075 0    50   Input ~ 0
 IN-
-Text Notes 4100 4740 0    59   ~ 0
+Text Notes 3400 4690 0    59   ~ 0
 C8 (BPFC_C) & R3 (BPFC_R) on the back side of the PCB\ncan be used to configure the bandpass filter. Use them to\nconfigure output Gain (decrease) & Band (frequency range).
 Wire Wire Line
-	9870 1245 9920 1245
+	10570 3695 10620 3695
 $Comp
 L Jumper:SolderJumper_3_Open JP1
 U 1 1 610C1E99
-P 9120 1245
-F 0 "JP1" H 9120 1450 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9120 1359 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9120 1245 50  0001 C CNN
-F 3 "~" H 9120 1245 50  0001 C CNN
-	1    9120 1245
+P 9820 3695
+F 0 "JP1" H 9820 3900 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 9820 3809 50  0000 C CNN
+F 2 "BioAmp:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9820 3695 50  0001 C CNN
+F 3 "~" H 9820 3695 50  0001 C CNN
+	1    9820 3695
 	1    0    0    -1  
 $EndComp
-Text GLabel 9920 1245 2    50   Input ~ 0
+Text GLabel 10620 3695 2    50   Input ~ 0
 IN+
-Text GLabel 9120 1645 3    50   Input ~ 0
+Text GLabel 9820 4095 3    50   Input ~ 0
 DRL
 $Comp
 L Device:R R6
 U 1 1 60D4E4F0
-P 9720 1245
-F 0 "R6" V 9820 1255 50  0000 C CNN
-F 1 "1M" V 9720 1255 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 9650 1245 50  0001 C CNN
-F 3 "~" H 9720 1245 50  0001 C CNN
-	1    9720 1245
+P 10420 3695
+F 0 "R6" V 10520 3705 50  0000 C CNN
+F 1 "1M" V 10420 3705 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 10350 3695 50  0001 C CNN
+F 3 "~" H 10420 3695 50  0001 C CNN
+	1    10420 3695
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8320 1245 8370 1245
+	9020 3695 9070 3695
 $Comp
 L Device:R R2
 U 1 1 60D5FBE8
-P 8520 1245
-F 0 "R2" V 8620 1255 50  0000 C CNN
-F 1 "1M" V 8520 1255 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 8450 1245 50  0001 C CNN
-F 3 "~" H 8520 1245 50  0001 C CNN
-	1    8520 1245
+P 9220 3695
+F 0 "R2" V 9320 3705 50  0000 C CNN
+F 1 "1M" V 9220 3705 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 9150 3695 50  0001 C CNN
+F 3 "~" H 9220 3695 50  0001 C CNN
+	1    9220 3695
 	0    1    1    0   
 $EndComp
-Text GLabel 8320 1245 0    50   Input ~ 0
+Text GLabel 9020 3695 0    50   Input ~ 0
 IN-
-Text Notes 8895 920  0    39   ~ 0
+Text Notes 9595 3370 0    39   ~ 0
 Electrode config
 Wire Wire Line
-	9120 1395 9120 1645
+	9820 3845 9820 4095
 Wire Wire Line
-	9320 1245 9570 1245
+	10020 3695 10270 3695
 Wire Wire Line
-	8670 1245 8920 1245
+	9370 3695 9620 3695
 Wire Notes Line
-	8695 945  8695 1520
+	9395 3395 9395 3970
 Wire Notes Line
-	8695 1520 9545 1520
+	9395 3970 10245 3970
 Wire Notes Line
-	9545 1520 9545 945 
+	10245 3970 10245 3395
 Wire Notes Line
-	9545 945  8695 945 
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 61102AF7
-P 2840 3710
-F 0 "JP2" V 2790 3850 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 2870 3840 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2840 3710 50  0001 C CNN
-F 3 "~" H 2840 3710 50  0001 C CNN
-	1    2840 3710
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2650 3550 2840 3550
-Wire Wire Line
-	2840 3550 2840 3560
-Text Notes 2680 3470 0    39   ~ 0
+	10245 3395 9395 3395
+Text Notes 2450 3385 0    39   ~ 0
 Narrow Band
 Wire Notes Line
-	2740 3490 2740 3880
+	3430 765  3430 1355
 Wire Notes Line
-	2740 3880 2950 3880
+	3430 1355 4360 1355
 Wire Notes Line
-	2950 3880 2950 3490
+	4360 1355 4360 765 
 Wire Notes Line
-	2950 3490 2740 3490
-Wire Notes Line
-	4900 1310 4900 1900
-Wire Notes Line
-	4900 1900 5830 1900
-Wire Notes Line
-	5830 1900 5830 1310
-Wire Notes Line
-	5830 1310 4900 1310
-Text Notes 5120 1290 0    39   ~ 0
+	4360 765  3430 765 
+Text Notes 3650 745  0    39   ~ 0
 INA Input filter
-Text GLabel 2060 3910 0    50   Input ~ 0
+Text GLabel 1660 3910 0    50   Input ~ 0
 bpfIN
 Wire Wire Line
-	2060 3910 2150 3910
-Text GLabel 2940 4160 2    50   Input ~ 0
+	1660 3910 1750 3910
+Text GLabel 2540 4160 2    50   Input ~ 0
 bpfOUT
 Wire Wire Line
-	2840 3860 2840 3910
+	2250 3910 2440 3910
 Wire Wire Line
-	2650 3910 2840 3910
+	2440 4480 2410 4480
 Wire Wire Line
-	2840 3910 2840 4160
+	2540 4480 2440 4480
+Connection ~ 2440 4480
 Wire Wire Line
-	2840 4480 2810 4480
-Connection ~ 2840 3910
+	2540 4160 2440 4160
+Connection ~ 2440 4160
 Wire Wire Line
-	2940 4480 2840 4480
-Connection ~ 2840 4480
+	2440 4160 2440 4480
 Wire Wire Line
-	2940 4160 2840 4160
-Connection ~ 2840 4160
-Wire Wire Line
-	2840 4160 2840 4480
-Wire Wire Line
-	2630 4160 2840 4160
+	2230 4160 2440 4160
 $Comp
 L Device:C C3
 U 1 1 601740C2
-P 2500 3910
-F 0 "C3" V 2540 3800 50  0000 C CNN
-F 1 "47nF" V 2640 3910 50  0000 C CNN
-F 2 "BioAmp:C_1206_dusjagr" H 2538 3760 50  0001 C CNN
-F 3 "~" H 2500 3910 50  0001 C CNN
-	1    2500 3910
+P 2100 3910
+F 0 "C3" V 2140 3800 50  0000 C CNN
+F 1 "47nF" V 2240 3910 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 2138 3760 50  0001 C CNN
+F 3 "~" H 2100 3910 50  0001 C CNN
+	1    2100 3910
 	0    1    -1   0   
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 611A7BA0
-P 5520 3820
-F 0 "C8" V 5380 3820 50  0000 C CNN
-F 1 "BPFC_C" V 5650 3820 50  0000 C CNN
-F 2 "BioAmp:C_1206_dusjagr" H 5558 3670 50  0001 C CNN
-F 3 "~" H 5520 3820 50  0001 C CNN
-	1    5520 3820
+P 4870 3720
+F 0 "C8" V 4730 3720 50  0000 C CNN
+F 1 "BPFC_C" V 5000 3720 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 4908 3570 50  0001 C CNN
+F 3 "~" H 4870 3720 50  0001 C CNN
+	1    4870 3720
 	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 611A7F93
-P 5520 4090
-F 0 "R3" V 5520 4090 50  0000 C CNN
-F 1 "BPFC_R" V 5630 4090 50  0000 C CNN
-F 2 "BioAmp:R_1206_dusjagr" V 5450 4090 50  0001 C CNN
-F 3 "~" H 5520 4090 50  0001 C CNN
-	1    5520 4090
+P 4870 3990
+F 0 "R3" V 4870 3990 50  0000 C CNN
+F 1 "BPFC_R" V 4980 3990 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 4800 3990 50  0001 C CNN
+F 3 "~" H 4870 3990 50  0001 C CNN
+	1    4870 3990
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5670 3820 5670 3960
+	5020 3720 5020 3860
 Wire Wire Line
-	5370 3820 5370 3960
+	4720 3720 4720 3860
 Wire Wire Line
-	5770 3960 5670 3960
-Connection ~ 5670 3960
+	5120 3860 5020 3860
+Connection ~ 5020 3860
 Wire Wire Line
-	5670 3960 5670 4090
+	5020 3860 5020 3990
 Wire Wire Line
-	5250 3960 5370 3960
-Connection ~ 5370 3960
+	4600 3860 4720 3860
+Connection ~ 4720 3860
 Wire Wire Line
-	5370 3960 5370 4090
-Text GLabel 5770 3960 2    50   Input ~ 0
+	4720 3860 4720 3990
+Text GLabel 5120 3860 2    50   Input ~ 0
 bpfOUT
-Text GLabel 5250 3960 0    50   Input ~ 0
+Text GLabel 4600 3860 0    50   Input ~ 0
 bpfIN
 Wire Notes Line
-	4750 3530 4750 4320
+	4100 3430 4100 4220
 Wire Notes Line
-	4750 4320 6270 4320
+	4100 4220 5620 4220
 Wire Notes Line
-	6270 4320 6270 3530
+	5620 4220 5620 3430
 Wire Notes Line
-	6270 3530 4750 3530
-Text Notes 4940 3500 0    39   ~ 0
+	5620 3430 4100 3430
+Text Notes 4290 3400 0    39   ~ 0
 Band Pass Filter Configuration (BPFC)
-Text Notes 8530 7330 0    118  ~ 0
-contact@upsidedownlabs.tech
-$Comp
-L BioAmp-EXG-Pill-rescue:LOGO_UDLABS-udlabs U2
-U 1 1 612DF07B
-P 6950 940
-F 0 "U2" H 6975 1285 50  0000 C CNN
-F 1 "LOGO_UDLABS" H 6975 1194 50  0000 C CNN
-F 2 "udlabs:EXG" H 6950 940 50  0001 C CNN
-F 3 "" H 6950 940 50  0001 C CNN
-	1    6950 940 
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	6400 470  6400 980 
-Wire Notes Line
-	6400 980  7540 980 
-Wire Notes Line
-	7540 980  7540 480 
+Text Notes 9000 7250 0    63   ~ 0
+UPlabs: contact@upsidedownlabs.tech
 Text Notes 7980 6500 0    118  ~ 24
 Header pins / Connectors
-Text GLabel 9790 5740 2    50   Input ~ 0
-IN+
-Text GLabel 9790 5640 2    50   Input ~ 0
-IN-
-Text GLabel 9790 5840 2    50   Input ~ 0
-DRL
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 60498730
-P 9590 5740
-F 0 "J2" H 9670 5805 50  0000 L CNN
-F 1 "BioAmp Input" H 9665 5715 50  0000 L CNN
-F 2 "BioAmp:BioAmpInput_PinHeader_1x03_P2.54mm_Vertical" H 9590 5740 50  0001 C CNN
-F 3 "~" H 9590 5740 50  0001 C CNN
-	1    9590 5740
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 602D9464
-P 8200 5650
-F 0 "J1" H 8275 5720 50  0000 L CNN
-F 1 "BioAmp Output" H 8270 5620 50  0000 L CNN
-F 2 "BioAmp:BioAmp_PinHeader_1x03_P2.54mm_Vertical" H 8200 5650 50  0001 C CNN
-F 3 "~" H 8200 5650 50  0001 C CNN
-	1    8200 5650
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:VCC #PWR05
 U 1 1 604A58B7
-P 8600 5500
-F 0 "#PWR05" H 8600 5350 50  0001 C CNN
-F 1 "VCC" H 8520 5650 50  0000 L CNN
-F 2 "" H 8600 5500 50  0001 C CNN
-F 3 "" H 8600 5500 50  0001 C CNN
-	1    8600 5500
+P 10850 5600
+F 0 "#PWR05" H 10850 5450 50  0001 C CNN
+F 1 "VCC" H 10770 5750 50  0000 L CNN
+F 2 "" H 10850 5600 50  0001 C CNN
+F 3 "" H 10850 5600 50  0001 C CNN
+	1    10850 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 604A536C
-P 8750 5800
-F 0 "#PWR06" H 8750 5550 50  0001 C CNN
-F 1 "GND" H 8750 5650 50  0000 C CNN
-F 2 "" H 8750 5800 50  0001 C CNN
-F 3 "" H 8750 5800 50  0001 C CNN
-	1    8750 5800
+P 11000 5900
+F 0 "#PWR06" H 11000 5650 50  0001 C CNN
+F 1 "GND" H 11000 5750 50  0000 C CNN
+F 2 "" H 11000 5900 50  0001 C CNN
+F 3 "" H 11000 5900 50  0001 C CNN
+	1    11000 5900
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 6200 2    50   Input ~ 0
+Text GLabel 8200 6050 2    50   Input ~ 0
 OUT
-Wire Notes Line
-	6970 6540 6970 980 
-Text Notes 4760 2030 0    59   ~ 0
+Text Notes 3290 1485 0    59   ~ 0
 Removes high freqency noise.
-Text Notes 1030 3260 0    59   ~ 0
+Text Notes 730  3210 0    59   ~ 0
 Create solder joint on JP2 to narrow the Band Pass freqnecny range\nDefault: Wide input frequency band, use when recording EMG, EOG\nConfigured: Narrow input frequency band, use for EEG, EOG, and ECG
-Text Notes 7920 2380 0    59   ~ 0
+Text Notes 8800 4850 0    47   ~ 0
 Bridge all three pads of the solder jumper to configure\nfor 2 Electrode operations instead of the 3 electrodes\nNote: 2 electrodes will give noisier output than 3 electrodes!
 $Comp
 L Connector:AudioJack3_SwitchTR J4
 U 1 1 63375E3F
-P 10750 5950
-F 0 "J4" H 10470 5783 50  0000 R CNN
-F 1 "AudioJack3_SwitchTR" H 10470 5874 50  0000 R CNN
-F 2 "BioAmp:AUDIO-Jack_3.5mm_5Pin" H 10750 5950 50  0001 C CNN
-F 3 "~" H 10750 5950 50  0001 C CNN
-	1    10750 5950
+P 6350 6000
+F 0 "J4" H 6070 5833 50  0000 R CNN
+F 1 "AudioJack_TRS" H 6070 5924 50  0000 R CNN
+F 2 "BioAmp:AUDIO-Jack_3.5mm_5Pin" H 6350 6000 50  0001 C CNN
+F 3 "~" H 6350 6000 50  0001 C CNN
+	1    6350 6000
 	-1   0    0    1   
 $EndComp
-Text GLabel 10400 5950 0    50   Input ~ 0
+Text GLabel 6000 6000 0    50   Input ~ 0
 IN-
-Text GLabel 10400 5750 0    50   Input ~ 0
+Text GLabel 6000 5800 0    50   Input ~ 0
 IN+
-Text GLabel 10400 6050 0    50   Input ~ 0
+Text GLabel 6000 6100 0    50   Input ~ 0
 DRL
 Wire Wire Line
-	10550 6050 10400 6050
+	6150 6100 6000 6100
 Wire Wire Line
-	10550 5750 10400 5750
+	6150 5800 6000 5800
 Wire Wire Line
-	10550 5950 10400 5950
+	6150 6000 6000 6000
 $Comp
-L Connector:AudioJack3_SwitchTR J3
+L Connector:AudioJack2_SwitchT J3
 U 1 1 633861DF
-P 7450 6000
-F 0 "J3" H 7432 6325 50  0000 C CNN
-F 1 "AudioJack3_SwitchTR" H 7432 6234 50  0000 C CNN
-F 2 "BioAmp:AUDIO-Jack_3.5mm_5Pin" H 7450 6000 50  0001 C CNN
-F 3 "~" H 7450 6000 50  0001 C CNN
-	1    7450 6000
+P 7850 5850
+F 0 "J3" H 7832 6175 50  0000 C CNN
+F 1 "AudioJack_Mono" H 7832 6084 50  0000 C CNN
+F 2 "BioAmp:PJ301M-12_dusjagr_3d" H 7850 5850 50  0001 C CNN
+F 3 "~" H 7850 5850 50  0001 C CNN
+	1    7850 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 5550 8600 5550
+	10650 5650 10850 5650
 Wire Wire Line
-	8600 5550 8600 5500
+	10850 5650 10850 5600
 Wire Wire Line
-	8750 5800 8750 5650
-Wire Wire Line
-	8750 5650 8400 5650
-Wire Wire Line
-	8450 5750 8400 5750
-Wire Wire Line
-	8450 5750 8450 5950
+	11000 5900 11000 5750
 $Comp
 L power:GND #PWR0101
 U 1 1 633A694E
-P 7900 5950
-F 0 "#PWR0101" H 7900 5700 50  0001 C CNN
-F 1 "GND" H 7900 5800 50  0000 C CNN
-F 2 "" H 7900 5950 50  0001 C CNN
-F 3 "" H 7900 5950 50  0001 C CNN
-	1    7900 5950
+P 8300 5800
+F 0 "#PWR0101" H 8300 5550 50  0001 C CNN
+F 1 "GND" H 8300 5650 50  0000 C CNN
+F 2 "" H 8300 5800 50  0001 C CNN
+F 3 "" H 8300 5800 50  0001 C CNN
+	1    8300 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 5950 7900 5900
+	8300 5800 8300 5750
 Wire Wire Line
-	7900 5900 7650 5900
+	8300 5750 8050 5750
+$Comp
+L BioAmp-EXG-Pill-rescue:LOGOS LOGO2
+U 1 1 6339A5DC
+P 1100 6300
+F 0 "LOGO2" H 1125 6645 50  0000 C CNN
+F 1 "LOGO_Coconut" H 1125 6554 50  0000 C CNN
+F 2 "BioAmp:Coconut_logo" H 1100 6300 50  0001 C CNN
+F 3 "" H 1100 6300 50  0001 C CNN
+	1    1100 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 F1
+U 1 1 5D375C76
+P 7250 1650
+F 0 "F1" H 7169 625 50  0000 C CNN
+F 1 "feather long" H 7169 716 50  0000 C CNN
+F 2 "BioAmp:PinHeader_1x16_FeatherLong" H 7250 1650 50  0001 C CNN
+F 3 "~" H 7250 1650 50  0001 C CNN
+	1    7250 1650
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 F2
+U 1 1 5D375CC4
+P 7650 1850
+F 0 "F2" H 7570 1025 50  0000 C CNN
+F 1 "feather short" H 7570 1116 50  0000 C CNN
+F 2 "BioAmp:PinHeader_1x12_FeatherShort" H 7650 1850 50  0001 C CNN
+F 3 "~" H 7650 1850 50  0001 C CNN
+	1    7650 1850
+	-1   0    0    1   
+$EndComp
+Text Label 6850 850  0    50   ~ 0
+~RST
+Text Label 6850 1050 0    50   ~ 0
+AREF
+Text Label 6850 1250 0    50   ~ 0
+A0
+Text Label 6850 1350 0    50   ~ 0
+A1
+Text Label 6850 1450 0    50   ~ 0
+A2
+Text Label 6850 1550 0    50   ~ 0
+A3
+Text Label 6850 1650 0    50   ~ 0
+A4
+Text Label 6850 1750 0    50   ~ 0
+A5
+Text Label 6850 1850 0    50   ~ 0
+SCK
+Text Label 6850 1950 0    50   ~ 0
+MOSI
+Text Label 6850 2050 0    50   ~ 0
+MISO
+Text Label 6850 2150 0    50   ~ 0
+RX
+Text Label 6850 2250 0    50   ~ 0
+TX
+Text Label 6850 2350 0    50   ~ 0
+LDO2
+Text Label 8100 1250 2    50   ~ 0
+VBAT
+Text Label 8100 1350 2    50   ~ 0
+EN
+Text Label 8100 1450 2    50   ~ 0
+VUSB
+Text Label 8100 1550 2    50   ~ 0
+F6
+Text Label 8100 1650 2    50   ~ 0
+F5
+Text Label 8100 1750 2    50   ~ 0
+F4
+Text Label 8100 1850 2    50   ~ 0
+F3
+Text Label 8100 1950 2    50   ~ 0
+F2
+Text Label 8100 2050 2    50   ~ 0
+F1
+Text Label 8100 2150 2    50   ~ 0
+F0
+Text Label 8100 2250 2    50   ~ 0
+SCL
+Text Label 8100 2350 2    50   ~ 0
+SDA
 Wire Wire Line
-	7800 6200 7650 6200
-Text GLabel 8450 5950 3    50   Input ~ 0
+	6850 850  7050 850 
+Wire Wire Line
+	6850 1050 7050 1050
+Wire Wire Line
+	6850 1350 7050 1350
+Wire Wire Line
+	6850 1450 7050 1450
+Wire Wire Line
+	6850 1550 7050 1550
+Wire Wire Line
+	6850 1650 7050 1650
+Wire Wire Line
+	6850 1750 7050 1750
+Wire Wire Line
+	6850 1850 7050 1850
+Wire Wire Line
+	6850 1950 7050 1950
+Wire Wire Line
+	6850 2050 7050 2050
+Wire Wire Line
+	6850 2150 7050 2150
+Wire Wire Line
+	6850 2250 7050 2250
+Wire Wire Line
+	7850 1250 8100 1250
+Wire Wire Line
+	7850 1350 8100 1350
+Wire Wire Line
+	7850 2150 8100 2150
+Wire Wire Line
+	7850 2250 8100 2250
+Wire Wire Line
+	7850 2350 8100 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 5D3787E4
+P 5750 1150
+F 0 "#PWR0102" H 5750 900 50  0001 C CNN
+F 1 "GND" H 5755 977 50  0000 C CNN
+F 2 "" H 5750 1150 50  0001 C CNN
+F 3 "" H 5750 1150 50  0001 C CNN
+	1    5750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 850  6700 950 
+Wire Wire Line
+	6700 950  7050 950 
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5D37877D
+P 6700 850
+F 0 "#PWR0103" H 6700 700 50  0001 C CNN
+F 1 "+3.3V" H 6715 1023 50  0000 C CNN
+F 2 "" H 6700 850 50  0001 C CNN
+F 3 "" H 6700 850 50  0001 C CNN
+	1    6700 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5850 8100 5850
+Wire Wire Line
+	8100 5850 8100 6050
+Wire Wire Line
+	8100 6050 8200 6050
+$Comp
+L BioAmp-EXG-Pill-rescue:LOGOS BOARD1
+U 1 1 634C2FCF
+P 1100 6900
+F 0 "BOARD1" H 1125 7245 50  0000 C CNN
+F 1 "FeaterWing Board" H 1125 7154 50  0000 C CNN
+F 2 "BioAmp:WeatherWing_empty" H 1100 6900 50  0001 C CNN
+F 3 "" H 1100 6900 50  0001 C CNN
+	1    1100 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BioAmp-EXG-Pill-rescue:LOGO_UDLABS-udlabs LOGO1
+U 1 1 612DF07B
+P 1100 5840
+F 0 "LOGO1" H 1125 6185 50  0000 C CNN
+F 1 "LOGO_UDLABS" H 1125 6094 50  0000 C CNN
+F 2 "BioAmp:LOGO-UpsideDownLabs-EXG" H 1100 5840 50  0001 C CNN
+F 3 "" H 1100 5840 50  0001 C CNN
+	1    1100 5840
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 63598973
+P 8450 2050
+F 0 "D1" H 8450 1843 50  0000 C CNN
+F 1 "LED" H 8450 1934 50  0000 C CNN
+F 2 "BioAmp:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 2050 50  0001 C CNN
+F 3 "~" H 8450 2050 50  0001 C CNN
+	1    8450 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 6361D4AC
+P 8450 1900
+F 0 "D2" H 8450 1693 50  0000 C CNN
+F 1 "LED" H 8450 1784 50  0000 C CNN
+F 2 "BioAmp:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 1900 50  0001 C CNN
+F 3 "~" H 8450 1900 50  0001 C CNN
+	1    8450 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 636262AD
+P 8450 1750
+F 0 "D3" H 8450 1543 50  0000 C CNN
+F 1 "LED" H 8450 1634 50  0000 C CNN
+F 2 "BioAmp:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 1750 50  0001 C CNN
+F 3 "~" H 8450 1750 50  0001 C CNN
+	1    8450 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 63626515
+P 8450 1600
+F 0 "D4" H 8450 1393 50  0000 C CNN
+F 1 "LED" H 8450 1484 50  0000 C CNN
+F 2 "BioAmp:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 1600 50  0001 C CNN
+F 3 "~" H 8450 1600 50  0001 C CNN
+	1    8450 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D5
+U 1 1 6362CEC4
+P 8450 1450
+F 0 "D5" H 8450 1243 50  0000 C CNN
+F 1 "LED" H 8450 1334 50  0000 C CNN
+F 2 "BioAmp:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 1450 50  0001 C CNN
+F 3 "~" H 8450 1450 50  0001 C CNN
+	1    8450 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D6
+U 1 1 6362D15C
+P 8450 1300
+F 0 "D6" H 8450 1093 50  0000 C CNN
+F 1 "LED" H 8450 1184 50  0000 C CNN
+F 2 "BioAmp:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 1300 50  0001 C CNN
+F 3 "~" H 8450 1300 50  0001 C CNN
+	1    8450 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 636B12B3
+P 9550 2200
+F 0 "#PWR09" H 9550 1950 50  0001 C CNN
+F 1 "GND" H 9555 2027 50  0000 C CNN
+F 2 "" H 9550 2200 50  0001 C CNN
+F 3 "" H 9550 2200 50  0001 C CNN
+	1    9550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2200 9550 2200
+Wire Wire Line
+	8550 1300 9100 1300
+Wire Wire Line
+	9100 1300 9100 1450
+Wire Wire Line
+	8550 1450 9100 1450
+Connection ~ 9100 1450
+Wire Wire Line
+	8550 1600 9100 1600
+Wire Wire Line
+	9100 1450 9100 1600
+Connection ~ 9100 1600
+Wire Wire Line
+	8550 1750 9100 1750
+Wire Wire Line
+	8550 1900 9100 1900
+Connection ~ 9100 1750
+Wire Wire Line
+	9100 1600 9100 1750
+Connection ~ 9100 1900
+Wire Wire Line
+	9100 1900 9100 1750
+Wire Wire Line
+	9100 1900 9100 2050
+Wire Wire Line
+	8550 2050 9100 2050
+$Comp
+L Device:R R16
+U 1 1 636B0940
+P 9250 2200
+F 0 "R16" V 9043 2200 50  0000 C CNN
+F 1 "R" V 9134 2200 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 9180 2200 50  0001 C CNN
+F 3 "~" H 9250 2200 50  0001 C CNN
+	1    9250 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 2050 9100 2200
+Connection ~ 9100 2050
+Wire Wire Line
+	7850 2050 8350 2050
+Wire Wire Line
+	8350 1950 8350 1900
+Wire Wire Line
+	7850 1950 8350 1950
+Wire Wire Line
+	8350 1850 8350 1750
+Wire Wire Line
+	7850 1850 8350 1850
+Wire Wire Line
+	8300 1750 8300 1650
+Wire Wire Line
+	8300 1650 8350 1650
+Wire Wire Line
+	8350 1650 8350 1600
+Wire Wire Line
+	7850 1750 8300 1750
+Wire Wire Line
+	8250 1550 8350 1550
+Wire Wire Line
+	8350 1550 8350 1450
+Wire Wire Line
+	7850 1650 8250 1650
+Wire Wire Line
+	8250 1550 8250 1650
+Wire Wire Line
+	8150 1550 8150 1500
+Wire Wire Line
+	8150 1500 8250 1500
+Wire Wire Line
+	8250 1500 8250 1400
+Wire Wire Line
+	8250 1400 8350 1400
+Wire Wire Line
+	8350 1400 8350 1300
+Wire Wire Line
+	7850 1550 8150 1550
+Wire Wire Line
+	7850 1450 8200 1450
+$Comp
+L Device:R R17
+U 1 1 637CF8F3
+P 6050 1700
+F 0 "R17" V 5843 1700 50  0000 C CNN
+F 1 "1K" V 5934 1700 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 5980 1700 50  0001 C CNN
+F 3 "~" H 6050 1700 50  0001 C CNN
+	1    6050 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 637D4212
+P 6010 1930
+F 0 "R18" H 6080 1976 50  0000 L CNN
+F 1 "2K2" H 6080 1885 50  0000 L CNN
+F 2 "BioAmp:R_1206_dusjagr" V 5940 1930 50  0001 C CNN
+F 3 "~" H 6010 1930 50  0001 C CNN
+	1    6010 1930
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 1150 7050 1150
+$Comp
+L power:GND #PWR0104
+U 1 1 637F13C2
+P 5760 1930
+F 0 "#PWR0104" H 5760 1680 50  0001 C CNN
+F 1 "GND" H 5765 1757 50  0000 C CNN
+F 2 "" H 5760 1930 50  0001 C CNN
+F 3 "" H 5760 1930 50  0001 C CNN
+	1    5760 1930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5860 1930 5760 1930
+Wire Wire Line
+	6200 1700 6300 1700
+Wire Wire Line
+	5900 1700 5700 1700
+Wire Wire Line
+	6300 1700 6300 1250
+Wire Wire Line
+	6300 1250 7050 1250
+Text GLabel 5700 1700 0    50   Input ~ 0
 OUT
+$Comp
+L power:VCC #PWR0105
+U 1 1 6383A60A
+P 8200 800
+F 0 "#PWR0105" H 8200 650 50  0001 C CNN
+F 1 "VCC" H 8120 950 50  0000 L CNN
+F 2 "" H 8200 800 50  0001 C CNN
+F 3 "" H 8200 800 50  0001 C CNN
+	1    8200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L BioAmp-EXG-Pill-rescue:LOGOS LOGO3
+U 1 1 6387F518
+P 1100 7550
+F 0 "LOGO3" H 1125 7895 50  0000 C CNN
+F 1 "CoconutResearch" H 1125 7804 50  0000 C CNN
+F 2 "BioAmp:LOGO-CoconutText" H 1100 7550 50  0001 C CNN
+F 3 "" H 1100 7550 50  0001 C CNN
+	1    1100 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 638C6E2F
+P 9300 5750
+F 0 "J2" H 9375 5820 50  0000 L CNN
+F 1 "StressRelief Output" H 9370 5720 50  0000 L CNN
+F 2 "BioAmp:PinHeader_1x03_StressRelief" H 9300 5750 50  0001 C CNN
+F 3 "~" H 9300 5750 50  0001 C CNN
+	1    9300 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11000 5750 10650 5750
+Text GLabel 10700 6050 3    50   Input ~ 0
+OUT
+Wire Wire Line
+	10700 5850 10700 6050
+Wire Wire Line
+	10700 5850 10650 5850
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 602D9464
+P 10450 5750
+F 0 "J1" H 10525 5820 50  0000 L CNN
+F 1 "BioAmp Output" H 10520 5720 50  0000 L CNN
+F 2 "BioAmp:BioAmp_PinHeader_1x03_P2.54mm_Vertical" H 10450 5750 50  0001 C CNN
+F 3 "~" H 10450 5750 50  0001 C CNN
+	1    10450 5750
+	-1   0    0    1   
+$EndComp
+Text GLabel 9600 5950 3    50   Input ~ 0
+OUT
+$Comp
+L power:GND #PWR0106
+U 1 1 6390CA27
+P 9750 5900
+F 0 "#PWR0106" H 9750 5650 50  0001 C CNN
+F 1 "GND" H 9750 5750 50  0000 C CNN
+F 2 "" H 9750 5900 50  0001 C CNN
+F 3 "" H 9750 5900 50  0001 C CNN
+	1    9750 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5900 9750 5750
+$Comp
+L power:VCC #PWR0107
+U 1 1 63913950
+P 9750 5550
+F 0 "#PWR0107" H 9750 5400 50  0001 C CNN
+F 1 "VCC" H 9670 5700 50  0000 L CNN
+F 2 "" H 9750 5550 50  0001 C CNN
+F 3 "" H 9750 5550 50  0001 C CNN
+	1    9750 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5650 9750 5650
+Wire Wire Line
+	9750 5550 9750 5650
+Wire Wire Line
+	9750 5750 9500 5750
+Wire Wire Line
+	9500 5850 9600 5850
+Wire Wire Line
+	9600 5850 9600 5950
+Text Notes 5930 6500 0    118  ~ 24
+Jack Input
+Text Notes 6550 2700 0    118  ~ 24
+FeatherBoard / LEDs
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 639FF573
+P 2875 3685
+F 0 "JP3" V 2829 3733 50  0000 L CNN
+F 1 "Jumper_NO_Small" V 2920 3733 50  0000 L CNN
+F 2 "BioAmp:PinHeader_1x02_P2.54mm_Vertical" H 2875 3685 50  0001 C CNN
+F 3 "~" H 2875 3685 50  0001 C CNN
+	1    2875 3685
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2440 3910 2440 4160
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 63A45C55
+P 2054 1002
+F 0 "JP4" H 2054 1187 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2054 1096 50  0000 C CNN
+F 2 "BioAmp:PinHeader_1x02_P2.54mm_Vertical" H 2054 1002 50  0001 C CNN
+F 3 "~" H 2054 1002 50  0001 C CNN
+	1    2054 1002
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1002 2550 1270
+Connection ~ 2550 1270
+$Comp
+L Device:R R1
+U 1 1 60B3C4E8
+P 2040 1270
+F 0 "R1" V 1950 1270 50  0000 C CNN
+F 1 "RG" V 2040 1270 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 1970 1270 50  0001 C CNN
+F 3 "~" H 2040 1270 50  0001 C CNN
+	1    2040 1270
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 1270 1500 1720
+Wire Wire Line
+	1954 1002 1500 1002
+Wire Wire Line
+	1500 1002 1500 1270
+Connection ~ 1500 1270
+Wire Wire Line
+	2154 1002 2550 1002
+Wire Notes Line
+	2365 3405 3640 3405
+Wire Notes Line
+	3640 3405 3640 3860
+Wire Notes Line
+	2355 3860 2355 3405
+Wire Notes Line
+	1365 710  1365 1460
+Wire Notes Line
+	1365 1460 2680 1460
+Wire Notes Line
+	2680 1460 2680 695 
+Wire Notes Line
+	2680 695  1365 695 
+Wire Notes Line
+	6225 2895 6225 5205
+Wire Notes Line
+	8585 2880 8585 5195
+Wire Notes Line
+	8585 5195 8595 5195
+Wire Notes Line
+	1770 5305 1770 7765
+Wire Notes Line
+	1770 7765 1800 7765
+Wire Notes Line
+	5520 5295 5520 7760
+Wire Notes Line
+	5520 7760 5525 7760
+Wire Notes Line
+	7360 5285 7360 6500
+Wire Notes Line
+	7360 6500 7365 6500
+Wire Notes Line
+	5085 520  5085 2780
+Wire Notes Line
+	5085 2780 5105 2780
+Wire Notes Line
+	3640 3860 2355 3860
+Text GLabel 2930 3910 2    50   Input ~ 0
+OUT
+Wire Wire Line
+	2930 3910 2870 3910
+Wire Wire Line
+	2870 3910 2875 3785
+Wire Wire Line
+	2870 3910 2530 3910
+Connection ~ 2870 3910
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 63D69E27
+P 2530 3760
+F 0 "JP2" V 2484 3828 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 2575 3828 50  0000 L CNN
+F 2 "BioAmp:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2530 3760 50  0001 C CNN
+F 3 "~" H 2530 3760 50  0001 C CNN
+	1    2530 3760
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2875 3550 2875 3585
+Wire Wire Line
+	2250 3550 2530 3550
+Wire Wire Line
+	2530 3610 2530 3550
+Connection ~ 2530 3550
+Wire Wire Line
+	2530 3550 2875 3550
+Wire Wire Line
+	8200 1450 8200 1170
+Wire Wire Line
+	8200 1170 8250 1170
+Wire Wire Line
+	8200 800  8250 800 
+Wire Wire Line
+	8250 800  8250 870 
+$Comp
+L Jumper:SolderJumper_2_Bridged JP5
+U 1 1 63EB914E
+P 8250 1020
+F 0 "JP5" V 8204 1088 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" V 8295 1088 50  0000 L CNN
+F 2 "BioAmp:SolderJumper-2_P1.3mm_Bridged" H 8250 1020 50  0001 C CNN
+F 3 "~" H 8250 1020 50  0001 C CNN
+	1    8250 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 63ED3654
+P 6620 2350
+F 0 "JP6" H 6620 2555 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6620 2464 50  0000 C CNN
+F 2 "BioAmp:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6620 2350 50  0001 C CNN
+F 3 "~" H 6620 2350 50  0001 C CNN
+	1    6620 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6770 2350 7050 2350
+Wire Wire Line
+	6300 1700 6300 1930
+Connection ~ 6300 1700
+Wire Wire Line
+	6300 1930 6160 1930
+$Comp
+L power:VCC #PWR0108
+U 1 1 63F2F7A1
+P 6330 2160
+F 0 "#PWR0108" H 6330 2010 50  0001 C CNN
+F 1 "VCC" H 6250 2310 50  0000 L CNN
+F 2 "" H 6330 2160 50  0001 C CNN
+F 3 "" H 6330 2160 50  0001 C CNN
+	1    6330 2160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6470 2350 6330 2350
+Wire Wire Line
+	6330 2350 6330 2160
+Text Notes 9000 7360 0    63   ~ 0
+dusjagr: marc@dusseiller.ch
 $EndSCHEMATC
