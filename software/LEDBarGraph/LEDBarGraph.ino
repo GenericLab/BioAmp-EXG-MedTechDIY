@@ -28,13 +28,13 @@
 
 #define SAMPLE_RATE 500
 #define BAUD_RATE 115200
-#define INPUT_PIN A7
+#define INPUT_PIN A0
 #define BUFFER_SIZE 128
 
 int circular_buffer[BUFFER_SIZE];
 int data_index, sum;
 // LED pin numbers in-order
-int led_bar[] = {1,2,3,4,5,6};
+int led_bar[] = {8, 9, 10, 11, 12, 13};
 int total_leds = sizeof(led_bar) / sizeof(led_bar[0]);
 
 void setup() {
@@ -66,7 +66,7 @@ void loop() {
 
 		// Update LED bar graph
     	for(int i = 0; i<=total_leds; i++){
-    		if(i>(envelop-1)){
+    		if(i>(envelop/15-1)){
       			digitalWrite(led_bar[i], LOW);
     		} else {
       			digitalWrite(led_bar[i], HIGH);

@@ -4,6 +4,8 @@ Thanks a lot to the team at UpsideDown Labs!!!
 
 ![Total redesign for use with UM Feather S3](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/screenshots/Feather-EXG-Pill_Ray_front.jpg)
 
+![Total redesign for use with UM Feather S3](https://github.com/GenericLab/BioAmp-EXG-MedTechDIY/raw/main/hardware/screenshots/Feather-EXG-Pill_Ray_back.jpg)
+
 See more about the UM ESP-S3 board here: https://esp32s3.com/feathers3.html
 
 ## V1.0b - forked and ordered, in process of manufacturing
